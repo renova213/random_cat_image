@@ -14,7 +14,8 @@ void main() {
   GetRandomCatImage usecase =
       GetRandomCatImage(catRepositories: mockCatRepositories);
 
-  const testCat = Cat(urlImage: 'https://cdn2.thecatapi.com/images/1v6.jpg');
+  const testCat =
+      Cat(urlImage: 'https://cdn2.thecatapi.com/images/1v6.jpg', id: '1v6');
 
   test('should get cat from the repository', () async {
     when(mockCatRepositories.getRandomCatImage())

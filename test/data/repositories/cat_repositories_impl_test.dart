@@ -16,8 +16,8 @@ void main() {
   CatRepositoriesImpl repository =
       CatRepositoriesImpl(catRemoteDataSources: mockCatRemoteDataSource);
 
-  const testCatModel =
-      CatModel(urlImage: 'https://api.thecatapi.com/v1/images/search');
+  const testCatModel = CatModel(
+      urlImage: 'https://api.thecatapi.com/v1/images/search', id: '1v6');
   group('Get random cat', () {
     test(
         'Should return remote data when the call to remote data is successfull',

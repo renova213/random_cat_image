@@ -17,7 +17,8 @@ void main() {
   CatBloc bloc = CatBloc(getRandomCatImage: mockGetRandomCatImage);
 
   group('GetCatFromRandomImage', () {
-    const testCat = Cat(urlImage: 'https://cdn2.thecatapi.com/images/1v6.jpg');
+    const testCat =
+        Cat(urlImage: 'https://cdn2.thecatapi.com/images/1v6.jpg', id: '1v6');
 
     blocTest<CatBloc, CatState>(
       'should get data from the random use case',
