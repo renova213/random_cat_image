@@ -16,7 +16,11 @@ class CatDisplay extends StatelessWidget {
             style: const TextStyle(fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 16),
-          Image.network(cat.urlImage)
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.5,
+            height: MediaQuery.of(context).size.width * 0.5,
+            child: Image.network(cat.urlImage, fit: BoxFit.fill),
+          ),
         ],
       ),
     );
