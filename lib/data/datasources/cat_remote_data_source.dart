@@ -16,8 +16,8 @@ class CatRemoteDataSourceImpl implements CatRemoteDataSource {
   @override
   Future<CatModel> getRandomCatImage() async {
     final response = await client.get(
-        Uri.parse('https://api.thecatapi.com/v1/images/search'),
-        headers: {'Content-Type': 'application/json'});
+      Uri.parse('https://api.thecatapi.com/v1/images/search'),
+    );
     if (response.statusCode == 200) {
       return CatModel.fromJson(
         (json.decode(response.body) as List).first,

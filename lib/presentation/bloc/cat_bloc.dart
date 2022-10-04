@@ -1,5 +1,5 @@
-import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:random_cat/core/error/failure.dart';
 import 'package:random_cat/domain/entities/cat.dart';
 import 'package:random_cat/domain/usecases/get_random_cat_image.dart';
